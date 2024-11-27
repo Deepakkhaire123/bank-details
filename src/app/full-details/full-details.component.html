@@ -1,0 +1,265 @@
+<div class="site grid-container container hfeed" id="page" *ngIf="ErrorMessage == false">
+    <div class="site-content" id="content">
+
+        <div class="content-area" id="primary">
+            <main class="site-main" id="main">
+
+                <article id="post-57" class="post-57 page type-page status-publish">
+                    <div class="inside-article">
+
+                        <div class="entry-content" itemprop="text">
+                            <div class="gb-container gb-container-6cca9d99 gb-container-a5c99ba6"
+                                [style]="{'background': fullDetails?.bank_color}">
+                                <div class="gb-container gb-container-41ed9b38">
+
+                                    <h1 class="gb-headline gb-headline-6d33c642 gb-headline-text">
+                                        <strong><strong>{{fullDetails?.bank_name}}
+                                                to Bank
+                                                Transfer</strong></strong>
+                                    </h1>
+
+                                </div>
+                            </div>
+
+                            <div class="gb-container gb-container-6ceb0b02">
+                                <div class="gb-container gb-container-6d5f2ae1 gb-container-a5c99ba6">
+                                    <div class="gb-container gb-container-feb1a180" [style]="{'background': fullDetails?.bank_color}">
+                                        <div class="gb-grid-wrapper gb-grid-wrapper-c81de794">
+                                            <div class="gb-grid-column gb-grid-column-20a5cc92">
+                                                <div class="gb-container gb-container-20a5cc92">
+                                                    <div class="gb-container gb-container-1a757280">
+
+                                                        <figure class="wp-block-video"><video controls
+                                                                [src]="fullDetails?.video"></video>
+                                                        </figure>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="gb-grid-column gb-grid-column-07648120">
+                                                <div class="gb-container gb-container-07648120">
+                                                    <div class="gb-container gb-container-ed790568">
+
+                                                        <p [innerHTML]="fullDetails?.video_text"></p>
+
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="gb-container gb-container-6cad772f gb-container-a5c99ba6">
+                                <div class="gb-container gb-container-ac739990">
+
+                                    <h2 class="gb-headline gb-headline-7e989362 gb-headline-text" [style]="{'background': fullDetails?.bank_color}"><strong>Step By Step
+                                            Process Of {{fullDetails?.bank_name}}
+                                            to Bank Transfers</strong></h2>
+
+                                </div>
+                            </div>
+
+                            <div class="gb-container gb-container-d9074e31 gb-container-a5c99ba6" [style]="{'background': fullDetails?.bank_color}">
+                                <div class="gb-container gb-container-b7278130">
+                                    <div class="gb-grid-wrapper gb-grid-wrapper-4b58bed2">
+                                        <div class="gb-grid-column gb-grid-column-7207217f"
+                                            *ngFor="let step of fullDetails?.image_detail; let i = index">
+                                            <div class="gb-container gb-container-7207217f">
+                                                <div class="gb-container gb-container-acbebbf3">
+
+                                                    <h2 class="gb-headline gb-headline-0ce800fb gb-headline-text">STEP
+                                                        {{i + 1}}
+                                                    </h2>
+
+
+
+                                                    <figure class="gb-block-image gb-block-image-7a99b63a"><img
+                                                            fetchpriority="high" decoding="async" width="1080"
+                                                            height="2400" class="gb-image gb-image-7a99b63a"
+                                                            [src]="step?.step_image" alt=""
+                                                            title="ImportedPhoto_1715084166710" /></figure>
+
+
+
+                                                    <p class="has-text-align-center">{{step?.step_detail}}</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- <div class="gb-grid-column gb-grid-column-12e78f5c">
+                                            <div class="gb-container gb-container-12e78f5c">
+                                                <div class="gb-container gb-container-e90487df">
+
+                                                    <h2 class="gb-headline gb-headline-76ceb423 gb-headline-text">STEP 2
+                                                    </h2>
+
+
+
+                                                    <figure class="gb-block-image gb-block-image-6fed4e6b"><img
+                                                            decoding="async" width="1080" height="2400"
+                                                            class="gb-image gb-image-6fed4e6b"
+                                                            src="https://upitobank.info/wp-content/uploads/2024/05/media_20240507_174247_5598368823092015843.webp"
+                                                            alt="" title="media_20240507_174247_5598368823092015843"
+                                                            srcset="https://upitobank.info/wp-content/uploads/2024/05/media_20240507_174247_5598368823092015843.webp 1080w, https://upitobank.info/wp-content/uploads/2024/05/media_20240507_174247_5598368823092015843-135x300.webp 135w, https://upitobank.info/wp-content/uploads/2024/05/media_20240507_174247_5598368823092015843-461x1024.webp 461w, https://upitobank.info/wp-content/uploads/2024/05/media_20240507_174247_5598368823092015843-768x1707.webp 768w, https://upitobank.info/wp-content/uploads/2024/05/media_20240507_174247_5598368823092015843-691x1536.webp 691w, https://upitobank.info/wp-content/uploads/2024/05/media_20240507_174247_5598368823092015843-922x2048.webp 922w"
+                                                            sizes="(max-width: 1080px) 100vw, 1080px" /></figure>
+
+
+
+                                                    <p class="has-text-align-center">Select option &#8220;Enter Bank A/c
+                                                        Details&#8221; to
+                                                        transfer funds to another bank account.</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="gb-grid-column gb-grid-column-dedd4889">
+                                            <div class="gb-container gb-container-dedd4889">
+                                                <div class="gb-container gb-container-01cb3490">
+
+                                                    <h2 class="gb-headline gb-headline-0d5c9d01 gb-headline-text">STEP 3
+                                                    </h2>
+
+
+
+                                                    <figure class="gb-block-image gb-block-image-c6627535"><img
+                                                            decoding="async" width="1080" height="2400"
+                                                            class="gb-image gb-image-c6627535"
+                                                            src="https://upitobank.info/wp-content/uploads/2024/05/media_20240507_174247_6419277222998621135.webp"
+                                                            alt="" title="media_20240507_174247_6419277222998621135"
+                                                            srcset="https://upitobank.info/wp-content/uploads/2024/05/media_20240507_174247_6419277222998621135.webp 1080w, https://upitobank.info/wp-content/uploads/2024/05/media_20240507_174247_6419277222998621135-135x300.webp 135w, https://upitobank.info/wp-content/uploads/2024/05/media_20240507_174247_6419277222998621135-461x1024.webp 461w, https://upitobank.info/wp-content/uploads/2024/05/media_20240507_174247_6419277222998621135-768x1707.webp 768w, https://upitobank.info/wp-content/uploads/2024/05/media_20240507_174247_6419277222998621135-691x1536.webp 691w, https://upitobank.info/wp-content/uploads/2024/05/media_20240507_174247_6419277222998621135-922x2048.webp 922w"
+                                                            sizes="(max-width: 1080px) 100vw, 1080px" /></figure>
+
+
+
+                                                    <p class="has-text-align-center">Enter Bank account and IFSC number
+                                                        and Receiver&#8217;s
+                                                        name.</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="gb-grid-column gb-grid-column-3ae4f8a5">
+                                            <div class="gb-container gb-container-3ae4f8a5">
+                                                <div class="gb-container gb-container-b46eab45">
+
+                                                    <h2 class="gb-headline gb-headline-f0debdef gb-headline-text">STEP 4
+                                                    </h2>
+
+
+
+                                                    <figure class="gb-block-image gb-block-image-37239c63"><img
+                                                            loading="lazy" decoding="async" width="1080" height="2400"
+                                                            class="gb-image gb-image-37239c63"
+                                                            src="https://upitobank.info/wp-content/uploads/2024/05/media_20240507_174247_7762350246554779163.webp"
+                                                            alt="" title="media_20240507_174247_7762350246554779163"
+                                                            srcset="https://upitobank.info/wp-content/uploads/2024/05/media_20240507_174247_7762350246554779163.webp 1080w, https://upitobank.info/wp-content/uploads/2024/05/media_20240507_174247_7762350246554779163-135x300.webp 135w, https://upitobank.info/wp-content/uploads/2024/05/media_20240507_174247_7762350246554779163-461x1024.webp 461w, https://upitobank.info/wp-content/uploads/2024/05/media_20240507_174247_7762350246554779163-768x1707.webp 768w, https://upitobank.info/wp-content/uploads/2024/05/media_20240507_174247_7762350246554779163-691x1536.webp 691w, https://upitobank.info/wp-content/uploads/2024/05/media_20240507_174247_7762350246554779163-922x2048.webp 922w"
+                                                            sizes="auto, (max-width: 1080px) 100vw, 1080px" /></figure>
+
+
+
+                                                    <p class="has-text-align-center">Enter Desired amount to pay.</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="gb-grid-column gb-grid-column-aa745094">
+                                            <div class="gb-container gb-container-aa745094">
+                                                <div class="gb-container gb-container-3ec3ae4a">
+
+                                                    <h2 class="gb-headline gb-headline-72b74f62 gb-headline-text">STEP 5
+                                                    </h2>
+
+
+
+                                                    <figure class="gb-block-image gb-block-image-0ba90888"><img
+                                                            loading="lazy" decoding="async" width="1080" height="2400"
+                                                            class="gb-image gb-image-0ba90888"
+                                                            src="https://upitobank.info/wp-content/uploads/2024/05/media_20240507_174247_3205389547418478431.webp"
+                                                            alt="" title="media_20240507_174247_3205389547418478431"
+                                                            srcset="https://upitobank.info/wp-content/uploads/2024/05/media_20240507_174247_3205389547418478431.webp 1080w, https://upitobank.info/wp-content/uploads/2024/05/media_20240507_174247_3205389547418478431-135x300.webp 135w, https://upitobank.info/wp-content/uploads/2024/05/media_20240507_174247_3205389547418478431-461x1024.webp 461w, https://upitobank.info/wp-content/uploads/2024/05/media_20240507_174247_3205389547418478431-768x1707.webp 768w, https://upitobank.info/wp-content/uploads/2024/05/media_20240507_174247_3205389547418478431-691x1536.webp 691w, https://upitobank.info/wp-content/uploads/2024/05/media_20240507_174247_3205389547418478431-922x2048.webp 922w"
+                                                            sizes="auto, (max-width: 1080px) 100vw, 1080px" /></figure>
+
+
+
+                                                    <p class="has-text-align-center">After sending payment click on ref.
+                                                        no. arrow icon for UTR
+                                                        ID.</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="gb-grid-column gb-grid-column-8065416e">
+                                            <div class="gb-container gb-container-8065416e">
+                                                <div class="gb-container gb-container-37add97b">
+
+                                                    <h2 class="gb-headline gb-headline-cfbadc4c gb-headline-text">STEP 6
+                                                    </h2>
+
+
+
+                                                    <figure class="gb-block-image gb-block-image-1407ea1b"><img
+                                                            loading="lazy" decoding="async" width="1080" height="2400"
+                                                            class="gb-image gb-image-1407ea1b"
+                                                            src="https://upitobank.info/wp-content/uploads/2024/05/media_20240507_174247_7969190069734560190.webp"
+                                                            alt="" title="media_20240507_174247_7969190069734560190"
+                                                            srcset="https://upitobank.info/wp-content/uploads/2024/05/media_20240507_174247_7969190069734560190.webp 1080w, https://upitobank.info/wp-content/uploads/2024/05/media_20240507_174247_7969190069734560190-135x300.webp 135w, https://upitobank.info/wp-content/uploads/2024/05/media_20240507_174247_7969190069734560190-461x1024.webp 461w, https://upitobank.info/wp-content/uploads/2024/05/media_20240507_174247_7969190069734560190-768x1707.webp 768w, https://upitobank.info/wp-content/uploads/2024/05/media_20240507_174247_7969190069734560190-691x1536.webp 691w, https://upitobank.info/wp-content/uploads/2024/05/media_20240507_174247_7969190069734560190-922x2048.webp 922w"
+                                                            sizes="auto, (max-width: 1080px) 100vw, 1080px" /></figure>
+
+
+
+                                                    <p class="has-text-align-center">Copy UTR / UPI Ref. no. and now you
+                                                        can use this UTR on
+                                                        website or wherever needed.</p>
+
+                                                </div>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </article>
+            </main>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="site grid-container container hfeed" id="page" *ngIf="ErrorMessage == true">
+    <div class="site-content" id="content">
+
+        <div class="content-area" id="primary">
+            <main class="site-main" id="main">
+                <div class="entry-content" itemprop="text">
+                    <div class="gb-container gb-container-6cca9d99 gb-container-a5c99ba6"
+                        [style]="{'background': fullDetails?.bank_color}">
+                        <div class="gb-container gb-container-41ed9b38">
+        
+                            <h1 class="gb-headline gb-headline-6d33c642 gb-headline-text">
+                                <strong><strong>No Data Found</strong></strong>
+                            </h1>
+        
+                        </div>
+                    </div>
+                    </div>
+                <!-- <div class="noData" >
+                    <p class="txtNo"> No Data Found</p>
+                </div> -->
+            </main>
+        </div>
+    </div>
+</div>
+
+       
