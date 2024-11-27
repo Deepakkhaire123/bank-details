@@ -9,7 +9,6 @@ import Swal from 'sweetalert2';
   styleUrls: ['./full-details.component.css']
 })
 export class FullDetailsComponent implements OnInit{
-
   bankname : any;
   fullDetails : any;
   ErrorMessage = false;
@@ -25,7 +24,6 @@ export class FullDetailsComponent implements OnInit{
         let dataa = this.apiServe.decryptData(res?.data)
         this.fullDetails = dataa?.data;
         this.ErrorMessage = false;
-        console.log(this.fullDetails);
       }, error =>{
         this.ErrorMessage = true;
         this.showAlert2(error.error.message)
@@ -42,19 +40,18 @@ export class FullDetailsComponent implements OnInit{
     });
   
     swalWithStyle.fire({
-      position: 'top-end', // Position the alert at the top right or change it as needed
-      width: 'auto', // Adjust width for bar-like appearance
-      padding: '0.5rem', // Reduced padding for compact look
+      position: 'top-end',
+      width: 'auto',
+      padding: '0.5rem', 
       color: '#fff',
-      background: '#f44336', // Red bar color for error
+      background: '#f44336', 
       icon: 'error',
       title: message,
-      showConfirmButton: false, // Hides the confirm button
-      timer: 3000, // Auto-dismiss after 3 seconds
-      toast: true, // Make it look like a bar notification
+      showConfirmButton: false, 
+      timer: 3000, 
+      toast: true, 
     });
   
-    // Apply custom styles for a bar-like appearance
     const customCss = `
       .swal2-popup.my-custom-popup {
         border-radius: 5px;

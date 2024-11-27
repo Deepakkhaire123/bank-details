@@ -8,7 +8,6 @@ import { ApiService } from './services/api.service';
 })
 export class AppComponent implements OnInit{
   title = 'Payment-gateway';
-  bkName ='phonpay';
   BankData : any;
   constructor(private apiServe : ApiService){}
 
@@ -17,10 +16,6 @@ export class AppComponent implements OnInit{
         let daattaa = this.apiServe.decryptData(res?.data)
         this.BankData = daattaa?.data;
       })
-  }
-
-  getFullDetails(data : any){
-    this.bkName = data;
   }
    
 }
