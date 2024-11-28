@@ -692,12 +692,12 @@ nav ul ul .menu-item-has-children .dropdown-menu-toggle {
 }
 
 .inside-header {
-    padding: 20px 40px
+    padding: 20px 0 0 40px
 }
 
 .main-title {
     margin: 0;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 1.2em;
     word-wrap: break-word;
     font-weight: 700;
@@ -1292,7 +1292,9 @@ nav.toggled .sfHover>a>.dropdown-menu-toggle .gp-icon.icon-arrow-right svg {
 }
 
 .container.grid-container {
-    width: auto
+    width: auto;
+    margin-top: 20px;
+
 }
 
 .menu-toggle,

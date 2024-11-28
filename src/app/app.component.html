@@ -2,21 +2,22 @@
   <div class="inside-header grid-container">
     <div class="site-branding">
       <p class="main-title">
-        <a rel="home">UPI to Bank</a>
+        <a rel="home">UPI to Bank - <span class="smtext">Click Buttons for Details</span></a>
       </p>
     </div>
   </div>
 </header>
 <div class="gb-container gb-container-103f0685 gb-container-a5c99ba6">
   <div class="gb-container gb-container-16efa791">
-    <div class="gb-grid-wrapper gb-grid-wrapper-cce6e494">
-      <div class="gb-grid-column gb-grid-column-5a44c5eb" *ngFor="let bank of BankData">
+    <div class="gb-grid-wrapper gb-grid-wrapper-cce6e494" id="nthdiv">
+      <div class="gb-grid-column gb-grid-column-5a44c5eb" *ngFor="let bank of BankData; let i = index">
         <div class="gb-container gb-container-5a44c5eb" [style]="{'background': bank?.bank_color}"
           routerLink="/bank/{{bank?.bank_name}}">
           <a class="gb-container-link"></a>
           <p class="gb-headline gb-headline-b1cab6ae gb-headline-text">
             {{bank?.bank_name}}</p>
         </div>
+        <div class="horizantol"  *ngIf="i < 3"></div>
       </div>
     </div>
   </div>

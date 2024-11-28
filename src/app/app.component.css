@@ -1,0 +1,17 @@
+
+.smtext{
+    font-size: 16px;
+}
+#nthdiv div:nth-child(22) {
+    height: 80px;
+  }
+  #nthdiv div:nth-child(23) {
+    height: 80px;
+  }
+  #nthdiv div:nth-child(24) {
+    height: 80px;
+  }
+  .horizantol{
+    border-bottom: 2px dotted #000;
+    margin-top: 4px;
+  }
